@@ -995,7 +995,7 @@ footer .container {
 
 /* SLIDER */
 
-.itc-slider__wrapper {
+/* .itc-slider__wrapper {
     overflow: hidden;
 }
 
@@ -1010,6 +1010,65 @@ footer .container {
     font-size: 7rem;
 }
 
+
+.text-box {
+    margin-left: 44vw;
+    margin-top: 42vh;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+ */
 
 
 
@@ -1232,13 +1291,14 @@ footer .container {
     }
 
     .nft-content {
-        height: 850px;
+        height: 780px;
         border-top: 2px solid #e2a23b;
     }
 
     .nft-title {
         font-size: 7.5vw;
         padding-bottom: 30px;
+        line-height: 55px;
     }
 
     .nft-top-text {
@@ -1380,7 +1440,7 @@ footer .container {
     }
 
     .nft-top {
-        padding-top: 70px;
+        padding-top: 30px;
         overflow: hidden;
     }
 
@@ -1415,6 +1475,16 @@ footer .container {
         padding-top: 2px;
     }
 
+
+    .card_2 img {
+        width: 22vw;
+        height: 22vw;
+    }
+
+    .card_2 .card-image {
+        padding-bottom: 0px;
+    }
+
     .back-to-top {
         display: none;
     }
@@ -1433,65 +1503,6 @@ footer .container {
 
 }
 
-.text-box {
-    margin-left: 44vw;
-    margin-top: 42vh;
-}
-
-.btn:link,
-.btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 15px 40px;
-    display: inline-block;
-    border-radius: 100px;
-    transition: all .2s;
-    position: absolute;
-}
-
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.btn-white {
-    background-color: #fff;
-    color: #777;
-}
-
-.btn::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s;
-}
-
-.btn-white::after {
-    background-color: #fff;
-}
-
-.btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-}
-
-.btn-animated {
-    animation: moveInBottom 5s ease-out;
-    animation-fill-mode: backwards;
-}
-
-
 
 @media (max-width: 395px) {
     
@@ -1506,6 +1517,12 @@ footer .container {
     .form_holder {
         padding-left: 10px;
     }
+    
+    .copyright {
+        padding-top: 7px;
+    }
+
+
 }
 
 
@@ -1524,3 +1541,5 @@ footer .container {
         transform: translateY(0px);
     }
 }
+
+
