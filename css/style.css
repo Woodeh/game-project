@@ -1257,7 +1257,17 @@ footer .container {
         padding-top: 30px;
         justify-content: space-around;
         text-align: center;
-        gap: 10px;
+        gap: 70px;
+    }
+
+    .link-group h2 {
+        font-size: 24px;
+        line-height: 30%;
+    }
+
+    .link-group a {
+        font-size: 19px;
+        line-height: 40%;
     }
 
     .footer-logo {
@@ -1313,6 +1323,11 @@ footer .container {
     }
 
 
+    .links {
+       
+        gap: 30px;
+    }
+    
     .footer-logo {
         display: none;
     }
@@ -1489,12 +1504,20 @@ footer .container {
         display: none;
     }
 
+    .links {
+        gap: 20px;
+    }
+
     .link-group h2 {
-        font-size: 4.5vw;
+        font-size: 5vw;
     }
 
     .link-group a {
-        font-size: 3vw;
+        font-size: 3.8vw;
+    }
+
+    .link-group {
+        gap: 34px;
     }
 
     footer {
