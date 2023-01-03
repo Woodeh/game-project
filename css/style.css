@@ -1,5 +1,5 @@
 html {
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -13,8 +13,8 @@ body {
     max-width: 1900px;
     margin: 0 auto;
     box-shadow: 0px 0px 300px black;
-    background-color:#15181F;
-    
+    background-color: #15181F;
+
 }
 
 
@@ -44,7 +44,7 @@ header {
     align-items: center;
     padding-top: 40px;
     margin-bottom: 96px;
-    
+
 }
 
 
@@ -100,7 +100,9 @@ nav-link:hover {
     cursor: pointer;
 } */
 
-.launch-button{
+
+
+.launch-button {
 
     height: 40px;
     background: #E2A23B;
@@ -114,20 +116,20 @@ nav-link:hover {
     padding-right: 42px;
     overflow: hidden;
     transition: 1s all ease;
-    transform: translate(-0%,-0%);
+    transform: translate(-0%, -0%);
     cursor: pointer;
-  }
+}
 
-  .lauch-button a {
+.lauch-button a {
     color: black;
-  }
+}
 
-  .launch-button:hover {
+.launch-button:hover {
     transition-delay: 0.1s;
     transform: scale(0.94);
-  }
+}
 
-  .launch-button::before{
+.launch-button::before {
     background: #E9DEC3;
     content: "";
     position: absolute;
@@ -138,16 +140,116 @@ nav-link:hover {
     cursor: pointer;
     width: 100%;
     height: 0%;
-    transform: translate(-50%,-50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
     cursor: pointer;
-  }
-  
+}
 
-  .launch-button:hover::before{
+
+.launch-button:hover::before {
     height: 380%;
-  }
-  
+}
 
+
+
+
+/* HAMBURGER */
+
+
+#menu {
+    z-index: 2;
+    display: none;
+}
+
+#menubar {
+    width: 16vw;
+    height: 16vw;
+    cursor: pointer;
+    transition: transform 1s ease;
+}
+
+#menubar img {
+    width: 16vw;
+    height: 16vw;
+}
+
+
+.nav {
+    transition: 0.3s ease;
+    display: none;
+}
+
+.nav ul {
+    padding: 0 10px;
+}
+
+.nav li {
+    list-style: none;
+    padding: 12px 0;
+
+}
+
+.nav li a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+
+
+}
+
+.nav li a:hover {
+    color: #E2A23B;
+    cursor: pointer;
+    background-size: 100% 2px;
+}
+
+
+.menu-bg,
+#menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.menu-bg {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    left: 14px;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background-image: url(/images/banner.jpg);
+    border-radius: 50%;
+    transition: 0.5s ease;
+    border: 2px solid #E2A23B;
+}
+
+.change {
+    display: block;
+    transition-delay: 2s;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    display: block;
+}
+
+
+
+.change-bg {
+    width: 323px;
+    height: 410px;
+    transform: translate(-58%, -31%);
+}
 
 
 
@@ -203,19 +305,18 @@ nav-link:hover {
     box-shadow: 0px 1px 30px black;
     overflow: hidden;
     transition: 1s all ease;
-    transform: translate(-0%,-0%);
+    transform: translate(-0%, -0%);
     cursor: pointer;
 }
 
 .view-more-button:hover {
     transition-delay: 0.1s;
     transform: scale(0.94);
-    
+
 }
 
 
-
-  .view-more-button::before{
+.view-more-button::before {
     background: #E2A23B;
     content: "";
     position: absolute;
@@ -226,16 +327,14 @@ nav-link:hover {
     cursor: pointer;
     width: 100%;
     height: 0%;
-    transform: translate(-50%,-50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
     cursor: pointer;
-  }
-  
+}
 
-  .view-more-button:hover::before{
+
+.view-more-button:hover::before {
     height: 380%;
-  }
-
-
+}
 
 
 /* PAYMENT TYPES */
@@ -271,7 +370,7 @@ nav-link:hover {
 .medieval-content {
     border-top: 2px solid #E2A23B;
     background-color: #15181F;
-   margin-bottom: 100px
+    margin-bottom: 100px
 }
 
 .top-side-content {
@@ -287,7 +386,6 @@ nav-link:hover {
     text-align: center;
     color: #E2A23B;
 }
-
 
 
 .cards {
@@ -306,7 +404,6 @@ nav-link:hover {
     padding-bottom: 70px;
 }
 
-
 .content-card {
     background: rgba(0, 0, 0, 1);
     border: 2px solid #A06930;
@@ -319,6 +416,8 @@ nav-link:hover {
     height: 364px;
     transition: transform 1s;
 }
+
+
 
 .content-card:hover {
     border: 2px solid #E2A23B;
@@ -333,7 +432,6 @@ nav-link:hover {
     padding-bottom: 30px;
 
 }
-
 
 
 .card-title {
@@ -374,35 +472,35 @@ nav-link:hover {
     font-size: 21px;
     line-height: 28px;
     color: #E2A23B;
-    
     border-top: 2px solid #E2A23B;
     border-bottom: 2px solid #E2A23B;
     transition: 2s;
-  }
-  
-  .active, .collapsible:hover {
+}
+
+.active,
+.collapsible:hover {
     background-color: rgb(37, 37, 37);
     box-shadow: 0px 3px 100px black;
-  }
-  
-  .collapsible:after {
+}
+
+.collapsible:after {
     content: '\002B';
     color: white;
     font-weight: bold;
     float: right;
     margin-left: 5px;
-  }
-  
-  .active:after {
+}
+
+.active:after {
     content: "\2212";
-  }
-  
-  .content {
+}
+
+.content {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.8s ease-out;
     background-color: #f1f1f1;
-  }
+}
 
 /* GAME-CARDS */
 
@@ -411,7 +509,7 @@ nav-link:hover {
     justify-content: space-around;
     height: 600px;
     background-image: url(../images/table-wallpaper.jpg);
-    box-shadow:inset 5px  1px 100px 20px #000000;
+    box-shadow: inset 5px 1px 100px 20px #000000;
     border-top: 2px solid #383838;
     border-bottom: 2px solid #272726;
     align-items: center;
@@ -419,7 +517,6 @@ nav-link:hover {
     padding-right: 100px;
     gap: 20px;
 }
-
 
 
 .game-cards {
@@ -459,7 +556,6 @@ nav-link:hover {
 }
 
 
-
 .game-card_button {
     background: #E9DEC3;
     border-radius: 5px;
@@ -476,19 +572,18 @@ nav-link:hover {
     box-shadow: 0px 1px 30px black;
     overflow: hidden;
     transition: 1s all ease;
-    transform: translate(-0%,-0%);
+    transform: translate(-0%, -0%);
     cursor: pointer;
 }
 
 .game-card_button:hover {
     transition-delay: 0.1s;
     transform: scale(0.94);
-    
+
 }
 
 
-
-  .game-card_button::before{
+.game-card_button::before {
     background: #E2A23B;
     content: "";
     position: absolute;
@@ -499,14 +594,14 @@ nav-link:hover {
     cursor: pointer;
     width: 100%;
     height: 0%;
-    transform: translate(-50%,-50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
     cursor: pointer;
-  }
-  
+}
 
-  .game-card_button:hover::before{
+
+.game-card_button:hover::before {
     height: 380%;
-  }
+}
 
 
 
@@ -528,7 +623,6 @@ nav-link:hover {
 .card3d img {
     transition: all 300ms;
 }
-
 
 
 
@@ -662,7 +756,8 @@ nav-link:hover {
     width: 100%;
     background-size: cover;
     box-shadow: inset 0px 0px 50px #000000;
-    border-top: 2px solid #757575;;
+    border-top: 2px solid #757575;
+    ;
     display: flex;
     justify-content: space-between;
 
@@ -688,7 +783,7 @@ input {
     background-color: #e9dec3;
     outline: none;
     border: none;
-    width: 301px;
+    width: 288px;
     height: 50px;
     border-radius: 5px 0px 0px 5px;
 }
@@ -727,7 +822,8 @@ input {
 
 
 footer {
-    border-top: 2px solid #757575;;
+    border-top: 2px solid #757575;
+    ;
     background-color: #15181F;
     height: 590px;
 }
@@ -739,8 +835,8 @@ footer {
 
 footer .container {
     display: flex;
-    justify-content:space-between;
-    
+    justify-content: space-between;
+
 }
 
 .footer-content p {
@@ -781,10 +877,7 @@ footer .container {
     color: #E2A23B;
 }
 
-.link-group p {
- 
-
-}
+.link-group p {}
 
 .link-group a {
     color: #E9DEC3;
@@ -836,19 +929,19 @@ footer .container {
     line-height: 24px;
     color: #919094;
     padding-top: 20px;
-    border-top: 2px solid #757575;;
+    border-top: 2px solid #757575;
+    ;
 
 }
 
 
-
 /* SLIDER */
 
-  .itc-slider__wrapper {
+.itc-slider__wrapper {
     overflow: hidden;
-  }
+}
 
-  .itc-slider__item {
+.itc-slider__item {
     flex: 0 0 50%;
     max-width: 50%;
     height: 450px;
@@ -857,236 +950,114 @@ footer .container {
     align-items: center;
     color: rgba(255, 255, 255, 0.8);
     font-size: 7rem;
-  }
-
-
-
-
-/* HAMBURGER */
-
-
-  #menu {
-    z-index: 2;
-    display: none;
-  }
-  
-  #menubar {
-    width: 16vw;
-    height: 16vw;
-    cursor: pointer;
-    /* background-image: url(/images/sun-logo.svg);
-    background-size: cover; */
-    transition: transform 1s ease;
-  }
- 
-#menubar img {
-    width: 16vw;
-    height: 16vw;
 }
-  
-  /* .bar {
-    height: 5px;
-    width: 100%;
-    background-color: #DC052D;
-    display: block;
-    border-radius: 5px;
-    transition: 0.3s ease;
-  }
-  
-  #bar1 {
-    transform: translateY(-4px);
-  }
-  
-  #bar3 {
-    transform: translateY(4px);
-  } */
-  
-  .nav {
-    transition: 0.3s ease;
-    display: none;
-  }
-  
-  .nav ul {
-    padding: 0 10px;
-  }
-  
-  .nav li {
-    list-style: none;
-    padding: 12px 0;
-    
-  }
-  
-  .nav li a {
-    color: white;
-    font-size: 16px;
-    text-decoration: none;
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .3s;
-    text-shadow: 2px 2px 4px #000000;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    
-    
-  }
-  
-  .nav li a:hover {
-    color: #E2A23B;
-    cursor: pointer;
-    background-size: 100% 2px;
-  }
-  
 
 
 
 
-  .menu-bg, #menu {
-    top: 0;
-    left: 0;
-    position: absolute;
-  }
-  
-  .menu-bg {
-    display: none;
-    z-index: 1;
-    position: absolute;
-    left: 14px;
-    width: 0;
-    height: 0;
-    margin: 30px 0 20px 20px;
-    background-image: url(/images/banner.jpg);
-    border-radius: 50%;
-    transition: 0.5s ease;
-    border: 2px solid #E2A23B;
-  }
-  
-  .change {
-    display: block;
-    transition-delay: 2s;
-  }
-  
-  .rotate {
-    transform: rotate(180deg);
-    display: block;
-  }
-
- 
-  
-  .change-bg {
-    width: 323px;
-    height: 410px;
-    transform: translate(-58%,-31%);
-  }
 
 
- 
-  
-
-
-
+/* 870PX MEDIA */
 
 @media (max-width: 870px) {
 
-header {
-    height: 100%;
-}
+    header {
+        height: 100%;
+    }
 
-#header {
-    font-size: 1.9vw;
-    margin-bottom: 60px;
-}
+    #header {
+        font-size: 1.9vw;
+        margin-bottom: 60px;
+    }
 
-.navigation {
-    gap: 10px;
-    flex-wrap: wrap;
-}
+    .navigation {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
 
-.title {
-    font-size: 50px;
-    text-align: center;
-    word-break: break-word;
-}
+    .title {
+        font-size: 50px;
+        text-align: center;
+        word-break: break-word;
+    }
 
-.sub-title {
-    text-align: center;
-    font-size: 4.5vw;
-}
+    .sub-title {
+        text-align: center;
+        font-size: 4.5vw;
+    }
 
-.header-text {
-    text-align: center;
-    font-size: 2.5vw;
-    margin: 0 auto;
-    max-width: 450px;
-}
+    .header-text {
+        text-align: center;
+        font-size: 2.5vw;
+        margin: 0 auto;
+        max-width: 450px;
+    }
 
-.view-more-button {
-    margin: 0 auto;
-}
+    .view-more-button {
+        margin: 0 auto;
+    }
 
-.content-title {
-    font-size:7.5vw;
-    padding-top: 65px;
-}
+    .content-title {
+        font-size: 7.5vw;
+        padding-top: 65px;
+    }
 
-.view-more-button {
-    height: 35px;
-    width: 120px;
-}
+    .view-more-button {
+        height: 35px;
+        width: 120px;
+    }
 
-.payment-container {
-    max-width: 580px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+    .payment-container {
+        max-width: 580px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-.payment {
-    padding-top: 50px;
-    padding-bottom: 40px;
-}
+    .payment {
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
 
-.container {
-    max-width: 680px;
-}
+    .container {
+        max-width: 680px;
+    }
 
-.cards {
-    flex-wrap: wrap;
-    gap: 35px;
-}
+    .cards {
+        flex-wrap: wrap;
+        gap: 35px;
+    }
 
-.red-line {
-    padding-bottom: 35px;
-}
+    .red-line {
+        padding-bottom: 35px;
+    }
 
     .launch-button {
         padding-left: 25px;
-    padding-right: 25px;
-    height: 30px;
-}
-    
-    
+        padding-right: 25px;
+        height: 30px;
+    }
 
-.nft-card {
-    width: 323px;
-}
 
-.nft-title {
-    padding-bottom: 20px
-}
 
-h1 {
-    margin: -0.6em 0;
-}
+    .nft-card {
+        width: 323px;
+    }
 
-.nft-bottom {
-    gap: 0px;
-}
+    .nft-title {
+        padding-bottom: 20px
+    }
 
-.nft-content {
-    height: 960px;
-}
+    h1 {
+        margin: -0.6em 0;
+    }
+
+    .nft-bottom {
+        gap: 0px;
+    }
+
+    .nft-content {
+        height: 960px;
+    }
 
     .nft-card-bottom:nth-child(2) {
         margin-left: 41px;
@@ -1100,9 +1071,9 @@ h1 {
         max-width: 220px;
     }
 
-.game-cards {
-    padding-bottom: 20px;
-}
+    .game-cards {
+        padding-bottom: 20px;
+    }
 
     .game-card_text {
         display: none
@@ -1117,7 +1088,7 @@ h1 {
     .game-cards-content {
         flex-direction: column-reverse;
     }
-    
+
 
     .game-card_title {
         font-size: 30px;
@@ -1131,23 +1102,23 @@ h1 {
         margin-right: 0px;
     }
 
-    .sign-up_button{
-  width: 100px;
-  bottom: 0px;
+    .sign-up_button {
+        width: 100px;
+        bottom: 0px;
     }
-    
+
     .form {
         align-items: center;
         margin: 0 auto;
     }
 
-.sign-up_form {
-    padding-left: 14vw;
-}
+    .sign-up_form {
+        padding-left: 14vw;
+    }
 
-.form_holder {
-    padding-left: 20px;
-}
+    .form_holder {
+        padding-left: 20px;
+    }
 
     .socials {
         margin: 0 auto;
@@ -1185,216 +1156,228 @@ h1 {
     }
 }
 
+
+/* 700PX MEDIA */
+
 @media (max-width: 700px) {
 
-   .collapsible {
-    display: none;
-   }
+    .collapsible {
+        display: none;
+    }
 
-   .game-cards-content {
-    display: none;
-   }
+    .game-cards-content {
+        display: none;
+    }
 
     .nft-bottom {
-    display: none;
+        display: none;
+    }
+
+    .nft-content {
+        height: 850px;
+        border-top: 2px solid #e2a23b;
+    }
+
+    .nft-title {
+        font-size: 7.5vw;
+        padding-bottom: 30px;
+    }
+
+    .nft-top-text {
+        font-size: 2.8vw;
+    }
+
+    .nft-top {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+
+    .footer-logo {
+        display: none;
+    }
+
+
+    .copyright {
+        text-align: center;
+    }
+
+    .input {
+        width: 270px;
+    }
+
 }
 
-.nft-content {
-    height: 850px;
-    border-top: 2px solid #e2a23b;
-}
 
-.nft-title {
-    font-size: 7.5vw;
-    padding-bottom: 30px;
-}
-
-.nft-top-text {
-    font-size: 2.8vw;
-}
-
-.nft-top {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    gap: 50px;
-}
-
-
-.footer-logo {
-    display: none;
-}
-
-
-.copyright {
-    text-align: center;
-}
-
-.input {
-    width: 270px;
-}
-
-}
-
-
-
+/* 500PX MEDIA */
 
 @media (max-width: 500px) {
 
-#header {
-margin-bottom: 0px;
-padding-top: 10px;
-}
+    #header {
+        margin-bottom: 0px;
+        padding-top: 10px;
+    }
 
-.logo {
-    display: none;
-}
+    .logo {
+        display: none;
+    }
 
-.navigation {
-    display: none;
-}
+    .navigation {
+        display: none;
+    }
 
-#menu {
-    display: block;
-}
+    #menu {
+        display: block;
+    }
 
-.header-text {
-    max-width: 250px;
-}
+    .header-text {
+        max-width: 400px;
+        font-size: 14px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 
-.red-line {
-    padding-bottom: 20px;
-}
+    .red-line {
+        padding-bottom: 20px;
+    }
 
-.top-side-content {
-    line-height: 50px;
-}
+    .top-side-content {
+        line-height: 50px;
+    }
 
-.launch-button {
-    /* padding-left: 10px;
+    .launch-button {
+        /* padding-left: 10px;
     padding-right: 10px;
     height: 20px;
     border-radius: 5px 0px 0px 5px; */
-    display: none;
-}
+        display: none;
+    }
 
-.menu-bg {
-    display: block;
-  }
+    .menu-bg {
+        display: block;
+    }
 
 
-.view-more-button {
-    height: 6vw;
-    width: 17vw;
-    font-size: 2.5vw;
-}
 
-.title {
-    font-size: 35px;
-    line-height: 45px;
-}
 
-.payment {
-    padding-top: 30px;
-    padding-bottom: 15px;
-}
+    .title {
+        font-size: 35px;
+        line-height: 45px;
+    }
 
-.payment-type img {
-    width: 35vw;
-}
+    .payment {
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
 
-.sign-up {
-    height: 330px;
-}
+    .payment-type img {
+        width: 35vw;
+    }
 
-.sign-up_title {
-    font-size: 5.8vw;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 90px;
-}
+    .sign-up {
+        height: 330px;
+    }
 
-input {
-    width: 250px;
-}
+    .sign-up_title {
+        font-size: 5.8vw;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 90px;
+    }
 
-.content-title {
-    padding-top: 20px;
-}
+    input {
+        width: 250px;
+    }
 
-.medieval-content {
-    margin-bottom: 50px;
-}
+    .content-title {
+        padding-top: 20px;
+    }
 
-.cards {
-    gap: 25px;
-}
-
-.form_holder {
+    .content-card:nth-child(2) {
     
+    }
+
+    .medieval-content {
+        margin-bottom: 50px;
+    }
+
+    .cards {
+        gap: 25px;
+    }
+
+    .form_holder {}
+
+    .sign-up_form {
+        display: flex;
+    }
+
+    .sign-up_button {
+        width: 24vw;
+    }
+
+    .card-image img {
+        width: 21vw;
+    }
+
+    .nft-top {
+        padding-top: 70px;
+        overflow: hidden;
+    }
+
+    .nft-top-text {
+        font-size: 16px;
+    }
+
+
+    .nft-content {
+        max-height: 860px;
+    }
+
+    .content-card {
+        width: 40vw;
+        height: 51vw;
+    }
+
+    .card-title {
+        font-size: 4vw;
+    }
+
+.card-image:nth-child(2) {
+    width: 200px;
 }
 
-.sign-up_form {
-    display: flex;
-}
+    .card-text {
+        font-size: 3vw;
+    }
 
-.sign-up_button {
-    width: 24vw;
-}
+    .card-image {
+        padding-bottom: 4px;
+        padding-top: 2px;
+    }
 
-.card-image img {
-    width: 18vw;
-}
+    .back-to-top {
+        display: none;
+    }
 
-.nft-top {
-    padding-top: 70px;
-    overflow: hidden;
-}
+    .link-group h2 {
+        font-size: 4.5vw;
+    }
 
+    .link-group a {
+        font-size: 3vw;
+    }
 
-.nft-content {
-    height: 760px;
-}
-
-.content-card {
-    width: 40vw;
-    height: 51vw;
-}
-
-.card-title {
-    font-size: 3vw;
-}
-
-.card-text {
-    font-size: 2vw;
-   
-}
-
-.card-image {
-    padding-bottom: 10px;
-}
-
-.back-to-top {
-    display: none;
-}
-
-.link-group h2 {
-    font-size: 4.5vw;
-}
-
-.link-group a {
-    font-size: 3vw;
-}
-
-footer {
-    height: 310px;
-}
+    footer {
+        height: 310px;
+    }
 
 }
 
 .text-box {
     margin-left: 44vw;
-   margin-top: 42vh;
+    margin-top: 42vh;
 }
 
 .btn:link,
@@ -1451,6 +1434,27 @@ footer {
 }
 
 
+
+@media (max-width: 395px) {
+    
+    input {
+        width: 180px;
+    }
+
+    .sign-up_button {
+        right: 40px;
+    }
+
+    .form_holder {
+        padding-left: 10px;
+    }
+}
+
+
+
+
+
+
 @keyframes moveInBottom {
     0% {
         opacity: 0;
@@ -1462,5 +1466,3 @@ footer {
         transform: translateY(0px);
     }
 }
-
-
