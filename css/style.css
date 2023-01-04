@@ -8,7 +8,6 @@ a {
 }
 
 
-
 body {
     max-width: 1900px;
     margin: 0 auto;
@@ -288,6 +287,7 @@ nav-link:hover {
     padding-bottom: 10px;
     color: #E9DEC3;
     text-shadow: 2px 2px 4px #000000;
+    width: 800px;
 }
 
 
@@ -861,9 +861,9 @@ input {
 }
 
 .sign-up_button:hover {
-background-color: #383838;
-color:#e2a23b;
-text-shadow: 2px 2px 2px black;
+    background-color: #383838;
+    color: #e2a23b;
+    text-shadow: 2px 2px 2px black;
 }
 
 .form {
@@ -968,6 +968,7 @@ footer .container {
 .social-logo:hover {
     filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(128deg) brightness(101%) contrast(101%);
     cursor: pointer;
+    transition: 0.5s all ease;
 }
 
 .back-to-top {
@@ -978,6 +979,7 @@ footer .container {
 
 .back-to-top:hover {
     filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(128deg) brightness(101%) contrast(101%);
+    transition: 0.5s all ease;
 }
 
 .copyright {
@@ -1157,8 +1159,6 @@ footer .container {
         height: 30px;
     }
 
-
-
     .nft-card {
         width: 323px;
     }
@@ -1327,10 +1327,10 @@ footer .container {
 
 
     .links {
-       
+
         gap: 30px;
     }
-    
+
     .footer-logo {
         display: none;
     }
@@ -1431,10 +1431,6 @@ footer .container {
         padding-top: 20px;
     }
 
-    .content-card:nth-child(2) {
-    
-    }
-
     .medieval-content {
         margin-bottom: 50px;
     }
@@ -1443,7 +1439,6 @@ footer .container {
         gap: 25px;
     }
 
-    .form_holder {}
 
     .sign-up_form {
         display: flex;
@@ -1480,9 +1475,9 @@ footer .container {
         font-size: 4vw;
     }
 
-.card-image:nth-child(2) {
-    width: 200px;
-}
+    .card-image:nth-child(2) {
+        width: 200px;
+    }
 
     .card-text {
         font-size: 3vw;
@@ -1531,7 +1526,7 @@ footer .container {
 
 
 @media (max-width: 395px) {
-    
+
     input {
         width: 180px;
     }
@@ -1543,17 +1538,13 @@ footer .container {
     .form_holder {
         padding-left: 10px;
     }
-    
+
     .copyright {
         padding-top: 7px;
     }
 
 
 }
-
-
-
-
 
 
 @keyframes moveInBottom {
@@ -1568,73 +1559,68 @@ footer .container {
     }
 }
 
-
 .preloader {
-	/*фиксированное позиционирование*/
-	position: fixed;
-	/* координаты положения */
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	/* фоновый цвет элемента */
-	background: #000000;
-	/* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
-	z-index: 1001;
-  }
-  
-  .preloader__row {
-	position: relative;
-	top: 50%;
-	left: 50%;
-	width: 70px;
-	height: 70px;
-	margin-top: -35px;
-	margin-left: -35px;
-	text-align: center;
-	animation: preloader-rotate 2s infinite linear;
-  }
-  
-  .preloader__item {
-	position: absolute;
-	display: inline-block;
-	top: 0;
-	background-color: #E2A23B;
-	border-radius: 100%;
-	width: 35px;
-	height: 35px;
-	animation: preloader-bounce 2s infinite ease-in-out;
-  }
-  
-  .preloader__item:last-child {
-	top: auto;
-	bottom: 0;
-	animation-delay: -1s;
-  }
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000000;
+    z-index: 1001;
+}
 
-  @keyframes preloader-rotate {
-	100% {
-	  transform: rotate(360deg);
-	}
-  }
-  
-  @keyframes preloader-bounce {
-  
-	0%,
-	100% {
-	  transform: scale(0);
-	}
-  
-	50% {
-	  transform: scale(1);
-	}
-  }
-  
-  .loaded_hiding .preloader {
-	transition: 0.3s opacity;
-	opacity: 0;
-  }
-  
-  .loaded .preloader {
-	display: none;
-  }
+.preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    background-color: #E2A23B;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes preloader-bounce {
+
+    0%,
+    100% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
+.loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+}
+
+.loaded .preloader {
+    display: none;
+}
