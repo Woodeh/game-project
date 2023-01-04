@@ -17,7 +17,12 @@
 </head>
 
 <body>
-
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+      </div>
     <header>
         <div class="container">
             <section id="header">
@@ -101,8 +106,8 @@
 
 
     <button type="button" id="collapse" class="collapsible">Collector's Cards here!</button>
-    <div class="content">
-    <section class="game-cards-content">
+    <section class="content">
+    <div class="game-cards-content">
         <div class="game-cards">
             <div class="card3d"><img src="/images/Rectangle 64.svg"></div>
             <div class="card3d"><img src="/images/Rectangle 66.svg"></div>
@@ -118,8 +123,8 @@
         </div>
         <script src="/js/script.js"></script>
         
-    </section>
-</div>
+    </div>
+</section>
 
     <section class="nft-content" id="nft">
         <div class="container">
@@ -224,7 +229,15 @@
         </div>
     </div>
    
-
+    <script>
+        window.onload = function () {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 500);
+        }
+      </script>
     
  <!-- <div class="container">
         <div class="itc-slider" data-autoplay="true" data-interval="7000" data-loop="true" data-slider="itc-slider">
