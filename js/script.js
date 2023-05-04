@@ -52,9 +52,9 @@ for (i = 0; i < coll.length; i++) {
 
 $(window).on('mousewheel DOMMouseScroll', function(event){
   if(event.ctrlKey){
-  event.preventDefault()
+  event.preventDefault();
   }
-  })
+  });
 
 
   
